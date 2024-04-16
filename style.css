@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container {
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px auto;
+    gap: 1rem;
+}
+
+.cell {
+    position: relative;
+    cursor: pointer;
+}
+
+.cell div {
+    height: 100px;
+}
+
+.front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a6a6a6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #f2f2f2;
+    transform: rotateY(90deg);
+}
+
+.flip,
+.matched {
+    transform: rotateY(0deg);
+}
+
+.back {
+    background-color: #333;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
